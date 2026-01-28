@@ -43,7 +43,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="relative w-full py-12 md:py-24 lg:py-32 overflow-hidden">
       <AnimatedBackground variant="gradient" color="rgba(59, 130, 246, 0.08)" secondaryColor="rgba(99, 102, 241, 0.05)" />
-      
+
       <div className="container px-6 md:px-8 relative z-10">
         <ScrollReveal>
           <div className="flex flex-col items-center justify-center text-center space-y-8 mb-20">
@@ -71,8 +71,8 @@ export function ContactSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {contacts.map((contact, index) => (
             <ScrollReveal key={index} delay={index * 0.1}>
-              <motion.div 
-                whileHover={{ y: -8, scale: 1.02 }} 
+              <motion.div
+                whileHover={{ y: -8, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.3 }}
                 className="h-full"
@@ -98,13 +98,13 @@ export function ContactSection() {
 
         <ScrollReveal>
           <div className="flex flex-col items-center justify-center gap-6">
-            <motion.div 
+            <motion.div
               className="relative group"
               whileHover={{ scale: 1.05 }}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl" />
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 asChild
                 className="relative px-10 py-6 text-lg font-semibold rounded-2xl group-hover:shadow-2xl transition-all duration-300"
               >

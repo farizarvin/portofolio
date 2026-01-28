@@ -87,7 +87,7 @@ export function HeroSection() {
         ))}
       </div>
 
-      <div className="container px-4 md:px-8 relative z-10 w-full h-full flex flex-col justify-center">
+      <div className="container mx-auto px-4 md:px-8 relative z-10 w-full h-full flex flex-col justify-center">
         <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16 items-center">
           <ScrollReveal>
             <motion.div
