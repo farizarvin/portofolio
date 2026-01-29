@@ -68,7 +68,7 @@ export function ComponentLibraryShowcase() {
 
   return (
     <section id="projects" className="w-full py-12 md:py-24 lg:py-32 overflow-hidden">
-      <div className="container px-6 md:px-8">
+      <div className="container mx-auto px-6 md:px-8 max-w-7xl">
         <ScrollReveal>
           <div className="flex flex-col items-start justify-start space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-tight">Featured Projects</h2>

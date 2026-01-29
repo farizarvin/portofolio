@@ -87,8 +87,8 @@ export function HeroSection() {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10 w-full h-full flex flex-col justify-center">
-        <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16 items-center">
+      <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10 w-full max-w-7xl h-full flex flex-col justify-center">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center w-full">
           <ScrollReveal>
             <motion.div
               className="flex flex-col justify-center space-y-8"
@@ -115,13 +115,9 @@ export function HeroSection() {
                 <div className="space-y-2">
                   <h1 className="text-3xl sm:text-4xl md:text-7xl font-heading font-bold tracking-tight leading-tight">
                     Hi, I'm{" "}
-                    <motion.span
-                      className="bg-gradient-to-r from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent"
-                      animate={{ backgroundPosition: ["0%", "100%"] }}
-                      transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-                    >
+                    <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
                       Fariz Hasim Arvianto
-                    </motion.span>
+                    </span>
                   </h1>
                 </div>
 
@@ -139,7 +135,7 @@ export function HeroSection() {
                 <div>
                   <p className="text-sm font-semibold text-foreground mb-4 tracking-wide">TECH STACK</p>
                   <div className="flex flex-wrap gap-2">
-                    {["Machine Learning", "Deep Learning", "Python", "TensorFlow", "PyTorch", "NLP", "Computer Vision"].map((tech) => (
+                    {["Python", "TensorFlow", "PyTorch", "Scikit-Learn", "MLflow", "Kubeflow", "Docker", "Kubernetes"].map((tech) => (
                       <span
                         key={tech}
                         className="px-3 py-1 text-sm rounded-full bg-muted border border-border/50 text-foreground hover:border-primary transition-colors"

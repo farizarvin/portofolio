@@ -44,7 +44,7 @@ export function ContactSection() {
     <section id="contact" className="relative w-full py-12 md:py-24 lg:py-32 overflow-hidden">
       <AnimatedBackground variant="gradient" color="rgba(59, 130, 246, 0.08)" secondaryColor="rgba(99, 102, 241, 0.05)" />
 
-      <div className="container px-6 md:px-8 relative z-10">
+      <div className="container mx-auto px-6 md:px-8 max-w-7xl relative z-10">
         <ScrollReveal>
           <div className="flex flex-col items-center justify-center text-center space-y-8 mb-20">
             <motion.div
