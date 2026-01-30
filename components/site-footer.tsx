@@ -15,16 +15,16 @@ export function SiteFooter() {
               ML & AI Engineer creating intelligent solutions with modern AI technologies.
             </p>
             <div className="flex gap-4 pt-2">
-              <Link href="https://twitter.com" target="_blank" rel="noreferrer" className="glassmorphic-icon">
-                <Icons.twitter className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
-                <span className="sr-only">Twitter</span>
+              <Link href="https://instagram.com/farizhasimarvianto" target="_blank" rel="noreferrer" className="glassmorphic-icon">
+                <Icons.instagram className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
+                <span className="sr-only">Instagram</span>
               </Link>
               <Link href="https://github.com" target="_blank" rel="noreferrer" className="glassmorphic-icon">
                 <Icons.gitHub className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link href="https://linkedin.com/in/fariz-hasim-arvianto/" target="_blank" rel="noreferrer" className="glassmorphic-icon">
-                <Icons.twitter className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
+                <Icons.linkedin className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
             </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, Linkedin, Github, Twitter, Send, Sparkles, ArrowRight } from "lucide-react"
+import { Mail, Linkedin, Github, Instagram, Send, Sparkles, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { motion } from "framer-motion"
@@ -20,8 +20,8 @@ export function ContactSection() {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      value: "@yourname",
-      href: "https://github.com",
+      value: "@farizarvin",
+      href: "https://github.com/farizarvin",
       color: "from-slate-600 to-slate-800",
     },
     {
@@ -32,11 +32,11 @@ export function ContactSection() {
       color: "from-blue-600 to-blue-800",
     },
     {
-      icon: <Twitter className="w-6 h-6" />,
-      label: "Twitter",
-      value: "@yourhandle",
-      href: "https://twitter.com",
-      color: "from-sky-500 to-blue-600",
+      icon: <Instagram className="w-6 h-6" />,
+      label: "Instagram",
+      value: "@farizhasimarvianto",
+      href: "https://instagram.com/farizhasimarvianto",
+      color: "from-pink-500 to-purple-600",
     },
   ]
 
