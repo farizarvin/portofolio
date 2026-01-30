@@ -13,8 +13,8 @@ export function ContactSection() {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "hello@example.com",
-      href: "mailto:hello@example.com",
+      value: "farizarvin@gmail.com",
+      href: "mailto:farizarvin@gmail.com",
       color: "from-red-500 to-pink-500",
     },
     {
@@ -27,8 +27,8 @@ export function ContactSection() {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      value: "Your Name",
-      href: "https://linkedin.com",
+      value: "Fariz Hasim Arvianto",
+      href: "https://linkedin.com/in/fariz-hasim-arvianto/",
       color: "from-blue-600 to-blue-800",
     },
     {
@@ -108,7 +108,7 @@ export function ContactSection() {
                 asChild
                 className="relative px-10 py-6 text-lg font-semibold rounded-2xl group-hover:shadow-2xl transition-all duration-300"
               >
-                <Link href="mailto:hello@example.com" className="flex items-center gap-2">
+                <Link href="mailto:farizarvin@gmail.com" className="flex items-center gap-2">
                   <motion.span
                     animate={{ rotate: [0, -15, 15, 0] }}
                     transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}

@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
           <div className="flex flex-col gap-4 flex-1">
             <Link href="/" className="flex items-center gap-2">
-              <span className="font-heading text-xl tracking-tight font-bold">Portfolio</span>
+              <span className="font-heading text-xl tracking-tight font-bold">farizarvin</span>
             </Link>
             <p className="text-muted-foreground max-w-sm opacity-70">
               ML & AI Engineer creating intelligent solutions with modern AI technologies.
@@ -23,7 +23,7 @@ export function SiteFooter() {
                 <Icons.gitHub className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noreferrer" className="glassmorphic-icon">
+              <Link href="https://linkedin.com/in/fariz-hasim-arvianto/" target="_blank" rel="noreferrer" className="glassmorphic-icon">
                 <Icons.twitter className="h-5 w-5 text-muted-foreground transition-colors hover:text-foreground" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -73,7 +73,7 @@ export function SiteFooter() {
                 </li>
                 <li>
                   <Link
-                    href="mailto:hello@example.com"
+                    href="mailto:farizarvin@gmail.com"
                     className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
                   >
                     Email
@@ -81,7 +81,7 @@ export function SiteFooter() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="https://linkedin.com/in/fariz-hasim-arvianto/"
                     className="text-sm text-muted-foreground transition-colors hover:text-foreground opacity-70"
                   >
                     LinkedIn

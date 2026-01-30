@@ -41,7 +41,7 @@ export function SiteHeader() {
     >
       <div className="container mx-auto px-6 md:px-8 max-w-7xl flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2 z-10">
-          <span className="font-heading text-xl tracking-tight font-bold">Portfolio</span>
+          <span className="font-heading text-xl tracking-tight font-bold">farizarvin</span>
         </Link>
 
         {/* Desktop Navigation - Hidden on mobile */}
@@ -70,7 +70,15 @@ export function SiteHeader() {
           {/* Desktop CTA Buttons - Hidden on mobile */}
           <div className="hidden md:flex items-center space-x-2">
             <Button size="sm" className="neumorphic-button-primary" asChild>
-              <Link href="#contact">
+              <Link
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.querySelector("#contact")?.scrollIntoView({
+                    behavior: "smooth",
+                  })
+                }}
+              >
                 Let's work together
                 <motion.div
                   className="ml-1"

@@ -155,7 +155,7 @@ export function HeroSection() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-lg" />
                   <Link
-                    href="mailto:hello@example.com"
+                    href="mailto:farizarvin@gmail.com"
                     className="relative inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-xl font-semibold hover:shadow-2xl transition-all duration-300"
                   >
                     <motion.span animate={{ rotate: [0, -10, 10, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}>
