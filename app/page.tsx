@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/sections/hero-section"
-import { FeaturesSection } from "@/components/sections/features-section"
-import { ComponentLibraryShowcase } from "@/components/sections/component-library-showcase"
+import { SkillsSection } from "@/components/sections/skills-section"
+import { MyProjects } from "@/components/sections/my-projects"
 import { ContactSection } from "@/components/sections/contact-section"
 import { MouseGlow } from "@/components/ui-library/effects/mouse-glow"
 import { Snowfall } from "@/components/ui/snowfall"
@@ -24,8 +24,8 @@ export default function HomePage() {
       />
 
       <HeroSection />
-      <FeaturesSection />
-      <ComponentLibraryShowcase />
+      <SkillsSection />
+      <MyProjects />
       <ContactSection />
     </main>
   )

@@ -55,7 +55,7 @@ export function HeroSection() {
   ]
 
   return (
-    <section id="about" className="relative w-full h-[100dvh] pt-16 md:pt-0 overflow-hidden flex items-center justify-center">
+    <section id="home" className="relative w-full h-[100dvh] pt-60 md:pt-0 overflow-hidden flex items-center justify-center">
       <AnimatedBackground variant="gradient" color="rgba(59, 130, 246, 0.08)" secondaryColor="rgba(99, 102, 241, 0.05)" />
 
       {/* Animated orbs background */}
@@ -109,7 +109,7 @@ export function HeroSection() {
                   >
                     <Sparkles className="w-5 h-5 text-primary" />
                   </motion.div>
-                  <span className="text-xs md:text-sm font-semibold text-primary tracking-widest uppercase">ML & AI Engineer</span>
+                  <span className="text-xs md:text-sm font-semibold text-primary tracking-widest uppercase">ML/AI Engineer</span>
                 </motion.div>
 
                 <div className="space-y-2">
@@ -131,29 +131,12 @@ export function HeroSection() {
                 </motion.p>
               </motion.div>
 
-              <motion.div className="space-y-6" variants={itemVariants}>
-                <div>
-                  <p className="text-sm font-semibold text-foreground mb-4 tracking-wide">TECH STACK</p>
-                  <div className="flex flex-wrap gap-2">
-                    {["Python", "TensorFlow", "PyTorch", "Scikit-Learn", "MLflow", "Kubeflow", "Docker", "Kubernetes"].map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 text-sm rounded-full bg-muted border border-border/50 text-foreground hover:border-primary transition-colors"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-
               <motion.div className="flex flex-wrap gap-4 pt-8" variants={itemVariants}>
                 <motion.div
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="relative group"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-lg" />
                   <Link
                     href="mailto:farizarvin@gmail.com"
                     className="relative inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-xl font-semibold hover:shadow-2xl transition-all duration-300"
@@ -173,7 +156,7 @@ export function HeroSection() {
 
                 <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
                   <Link
-                    href="https://github.com"
+                    href="https://github.com/farizarvin"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 border-2 border-border rounded-xl font-semibold text-foreground hover:border-primary/60 hover:bg-primary/5 transition-all duration-300 backdrop-blur-sm"
@@ -185,7 +168,7 @@ export function HeroSection() {
 
                 <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
                   <Link
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/in/fariz-hasim-arvianto/"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 border-2 border-border rounded-xl font-semibold text-foreground hover:border-primary/60 hover:bg-primary/5 transition-all duration-300 backdrop-blur-sm"

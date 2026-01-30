@@ -12,9 +12,9 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { useScrollPosition } from "@/hooks/use-scroll-position"
 
 const navItems = [
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
+  { name: "Home", href: "#home" },
   { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ]
 
@@ -38,13 +38,14 @@ export function SiteHeader() {
         scrollPosition > 10 ? "bg-background/80 backdrop-blur-lg border-b border-border/40" : "bg-transparent",
       )}
     >
-      <div className="container mx-auto px-6 md:px-8 max-w-7xl flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2 z-10">
+      <div className="w-full px-4 md:px-8 md:max-w-7xl md:mx-auto flex h-16 items-center">
+        {/* Logo */}
+        <Link href="/" className="flex items-center z-10">
           <span className="font-heading text-xl tracking-tight font-bold">farizarvin</span>
         </Link>
 
         {/* Desktop Navigation - Hidden on mobile */}
-        <nav className="hidden md:flex items-center space-x-1 lg:space-x-6">
+        <nav className="hidden md:flex items-center space-x-1 lg:space-x-6 ml-[19.5rem]">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -63,7 +64,8 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="flex items-center space-x-4">
+        {/* Right side controls */}
+        <div className="flex items-center gap-2 ml-auto">
           <ModeToggle />
 
           {/* Desktop CTA Buttons - Hidden on mobile */}
@@ -90,13 +92,13 @@ export function SiteHeader() {
             </Button>
           </div>
 
-          {/* Mobile Menu Button - Only visible on mobile */}
+          {/* Mobile Menu Button */}
           <button
-            className="md:hidden flex items-center justify-center p-2 rounded-md bg-background/90 border border-border/40 shadow-sm"
+            className="flex md:hidden items-center justify-center w-10 h-10 rounded-md bg-background/90 border border-border/50"
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X className="text-foreground h-5 w-5" /> : <List className="text-foreground h-5 w-5" />}
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <List className="h-5 w-5" />}
           </button>
         </div>
       </div>

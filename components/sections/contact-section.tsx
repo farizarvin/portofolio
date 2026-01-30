@@ -57,9 +57,9 @@ export function ContactSection() {
               <span className="text-sm font-semibold text-primary tracking-widest uppercase">Get In Touch</span>
             </motion.div>
 
-            <div className="space-y-4">
-              <h2 className="text-4xl md:text-6xl font-heading font-bold tracking-tight">
-                Ready to Build Something <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Amazing?</span>
+            <div className="space-y-4 text-center">
+              <h2 className="text-4xl md:text-6xl font-heading font-bold tracking-tight text-center">
+                Ready to Build Something
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 I'm always excited to discuss new ideas, collaborate on projects, or simply chat about tech. Whether you have a specific project in mind or just want to connect, I'd love to hear from you.

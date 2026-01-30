@@ -12,31 +12,31 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { motion } from "framer-motion"
 import { ExternalLink, Github, Globe } from "lucide-react"
 
-export function ComponentLibraryShowcase() {
+export function MyProjects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured online store with product management, shopping cart, secure checkout, and order tracking. Integrated with Stripe for payments and Supabase for real-time data.",
-      tech: ["Next.js", "React", "Stripe", "Supabase", "Tailwind CSS", "TypeScript"],
-      image: "🛒",
-      link: "#",
-      github: "#",
+      title: "SavorBite",
+      description: "Platform untuk menjual makanan yang hampir kadaluarsa dengan harga diskon. Fitur utama: AI prediction untuk memprediksi makanan akan terjual atau basi, dan recipe generator dari bahan makanan yang tersedia.",
+      tech: ["Next.js", "Golang", "Ollama", "PostgreSQL", "Tailwind CSS", "Groq"],
+      image: "🍽️",
+      link: "https://savorbite.doscom.org/",
+      github: "https://github.com/IKOPOO/ecoBite",
     },
     {
-      title: "AI Chat Application",
-      description: "Real-time chat platform with AI assistance, message history, user authentication, and typing indicators. Built with WebSocket for live updates and OpenAI API integration.",
-      tech: ["React", "TypeScript", "Node.js", "Socket.io", "OpenAI API", "MongoDB"],
-      image: "💬",
-      link: "#",
-      github: "#",
+      title: "Kampus Bot AI",
+      description: "AI chatbot kampus dengan Groq Llama 3.3 70B untuk respons natural Bahasa Indonesia. Fitur: K-NN Intent Classification, Sentiment Analysis real-time, keyword extraction, dan RAG Context dari dokumen ter-cluster.",
+      tech: ["Python", "Django", "Groq", "RAG", "Ollama"],
+      image: "🤖",
+      link: "#MyProjects",
+      github: "https://github.com/farizarvin/MiniRAG-Chat",
     },
     {
-      title: "Task Management Dashboard",
-      description: "Collaborative team workspace with task creation, assignment, progress tracking, and real-time notifications. Features drag-and-drop kanban boards and team analytics.",
-      tech: ["React", "Firebase", "Redux", "Tailwind CSS", "JavaScript", "GraphQL"],
-      image: "✓",
-      link: "#",
-      github: "#",
+      title: "Methanol Prediction",
+      description: "Web application untuk prediksi methanol menggunakan machine learning. Model dibangun dengan Scikit-learn, backend FastAPI, dan di-deploy ke AWS dengan PM2 sebagai process manager.",
+      tech: ["Next.js", "Tailwind CSS", "FastAPI", "Scikit-learn", "AWS", "PM2"],
+      image: "🧪",
+      link: "https://methalyst.vercel.app",
+      github: "https://github.com/farizarvin/methalyst",
     },
     {
       title: "Portfolio Generator",
@@ -71,7 +71,7 @@ export function ComponentLibraryShowcase() {
       <div className="container mx-auto px-6 md:px-8 max-w-7xl">
         <ScrollReveal>
           <div className="flex flex-col items-start justify-start space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-tight">Featured Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-tight">My Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
               A selection of projects showcasing my expertise in full-stack development, from concept to deployment.
             </p>
