@@ -51,7 +51,7 @@ export function MyProjects() {
     {
       title: "StuntSense",
       description: "Website untuk prediksi stunting pada anak menggunakan machine learning dan AI. Dilengkapi dengan chatbot AI berbasis Groq dan Ollama untuk konsultasi gizi.",
-      tech: ["Laravel", "Blade", "JWT", "MySQL", "Groq", "Tailwind CSS"],
+      tech: ["Laravel", "Blade", "JWT", "MySQL", "Groq", "Tailwind CSS", "Ollama"],
       image: "/projects/stuntsense.png",
       link: "#",
       github: "https://github.com/farizarvin/StuntSense",
@@ -61,8 +61,8 @@ export function MyProjects() {
       title: "Dailyku",
       description: "Sistem akademik dan absensi untuk siswa SMA dengan fitur utama monitoring tingkat depresi. Menggunakan BERT untuk analisis teks, YOLO untuk face detection, dan integrasi AI untuk kesehatan mental.",
       tech: ["Laravel", "Livewire", "BERT", "YOLO", "FastAPI", "JWT"],
-      image: "�",
-      link: "#",
+      image: "/projects/dailyku.png",
+      link: "dailyku.doscom.org",
       github: "#",
     },
   ]
