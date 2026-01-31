@@ -7,6 +7,7 @@ import { TabsTrigger } from "@/components/ui/tabs"
 import { TabsList } from "@/components/ui/tabs"
 import { Tabs } from "@/components/ui/tabs"
 import Link from "next/link"
+import Image from "next/image"
 import { ScrollReveal } from "@/components/scroll-reveal"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { motion } from "framer-motion"
@@ -18,7 +19,7 @@ export function MyProjects() {
       title: "SavorBite",
       description: "Platform untuk menjual makanan yang hampir kadaluarsa dengan harga diskon. Fitur utama: AI prediction untuk memprediksi makanan akan terjual atau basi, dan recipe generator dari bahan makanan yang tersedia.",
       tech: ["Next.js", "Golang", "Ollama", "PostgreSQL", "Tailwind CSS", "Groq"],
-      image: "🍽️",
+      image: "/projects/savorbite.png",
       link: "https://savorbite.doscom.org/",
       github: "https://github.com/IKOPOO/ecoBite",
     },
@@ -26,33 +27,35 @@ export function MyProjects() {
       title: "Kampus Bot AI",
       description: "AI chatbot kampus dengan Groq Llama 3.3 70B untuk respons natural Bahasa Indonesia. Fitur: K-NN Intent Classification, Sentiment Analysis real-time, keyword extraction, dan RAG Context dari dokumen ter-cluster.",
       tech: ["Python", "Django", "Groq", "RAG", "Ollama"],
-      image: "🤖",
+      image: "/projects/kampusbot.png",
       link: "#MyProjects",
       github: "https://github.com/farizarvin/MiniRAG-Chat",
     },
     {
-      title: "Methanol Prediction",
+      title: "Methalyst",
       description: "Web application untuk prediksi methanol menggunakan machine learning. Model dibangun dengan Scikit-learn, backend FastAPI, dan di-deploy ke AWS dengan PM2 sebagai process manager.",
       tech: ["Next.js", "Tailwind CSS", "FastAPI", "Scikit-learn", "AWS", "PM2"],
-      image: "🧪",
+      image: "/projects/methalyst.png",
       link: "https://methalyst.vercel.app",
       github: "https://github.com/farizarvin/methalyst",
     },
     {
-      title: "Portfolio Generator",
-      description: "Automated tool that converts GitHub profiles into beautiful, customizable portfolios. Includes theme selection, domain management, and one-click deployment to Vercel.",
-      tech: ["Next.js", "GitHub API", "Vercel", "Tailwind CSS", "TypeScript", "React"],
-      image: "🎨",
-      link: "#",
-      github: "#",
+      title: "SafePay.AI",
+      description: "Sistem deteksi penipuan online menggunakan machine learning. Model klasifikasi dibangun dengan Scikit-learn untuk mengidentifikasi transaksi mencurigakan secara real-time.",
+      tech: ["Next.js", "Tailwind CSS", "FastAPI", "Scikit-learn", "AWS", "PM2"],
+      image: "/projects/safepay.png",
+      link: "https://safepay-theta.vercel.app",
+      github: "https://github.com/farizarvin/safepay.ai",
+      badge: "🏆 1st Place",
     },
     {
-      title: "Content Management System",
-      description: "Headless CMS with rich text editor, media library, scheduled publishing, and SEO optimization. Built with GraphQL backend for flexible content queries and asset management.",
-      tech: ["Next.js", "GraphQL", "PostgreSQL", "TypeScript", "Node.js", "Strapi"],
-      image: "📝",
+      title: "StuntSense",
+      description: "Website untuk prediksi stunting pada anak menggunakan machine learning dan AI. Dilengkapi dengan chatbot AI berbasis Groq dan Ollama untuk konsultasi gizi.",
+      tech: ["Laravel", "Blade", "JWT", "MySQL", "Groq", "Tailwind CSS"],
+      image: "/projects/stuntsense.png",
       link: "#",
-      github: "#",
+      github: "https://github.com/farizarvin/StuntSense",
+      badge: "🏆 Best Paper",
     },
     {
       title: "Analytics Dashboard",
@@ -86,11 +89,28 @@ export function MyProjects() {
                 transition={{ duration: 0.3 }}
               >
                 <Card className="h-full border border-border/50 hover:border-primary/50 transition-all hover:shadow-lg overflow-hidden group">
-                  <div className="h-32 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-b border-border/50">
-                    <span className="text-6xl opacity-60 group-hover:opacity-100 transition-opacity">{project.image}</span>
+                  <div className="h-40 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-b border-border/50 overflow-hidden">
+                    {project.image.startsWith('/') ? (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        width={400}
+                        height={160}
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <span className="text-6xl opacity-60 group-hover:opacity-100 transition-opacity">{project.image}</span>
+                    )}
                   </div>
                   <CardHeader>
-                    <CardTitle className="text-xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors flex items-center gap-2 flex-wrap">
+                      {project.title}
+                      {project.badge && (
+                        <span className="px-2.5 py-1 text-xs rounded-full bg-yellow-500/20 border border-yellow-500/50 text-yellow-600 dark:text-yellow-400 font-medium">
+                          {project.badge}
+                        </span>
+                      )}
+                    </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <CardDescription className="text-sm leading-relaxed text-foreground/70">
