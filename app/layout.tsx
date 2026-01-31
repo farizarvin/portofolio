@@ -28,7 +28,12 @@ export const metadata: Metadata = {
   title: "farizarvin",
   description: "ML & AI Engineer specializing in building intelligent systems, deep learning models, and computer vision solutions.",
   keywords: ["ML Engineer", "AI Engineer", "Deep Learning", "Computer Vision", "Python", "TensorFlow", "PyTorch"],
-  generator: 'v0.app'
+  generator: 'v0.app',
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({

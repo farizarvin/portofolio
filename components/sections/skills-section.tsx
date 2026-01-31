@@ -25,7 +25,8 @@ import {
   SiPm2,
   SiOllama,
   SiGo,
-  SiDjango
+  SiDjango,
+  SiHuggingface
 } from "react-icons/si"
 
 export function SkillsSection() {
@@ -35,8 +36,9 @@ export function SkillsSection() {
     { name: "Scikit-Learn", icon: <SiScikitlearn className="w-8 h-8 text-blue-500" /> },
     { name: "Keras", icon: <SiKeras className="w-8 h-8 text-red-600" /> },
     { name: "Python", icon: <SiPython className="w-8 h-8 text-yellow-500" /> },
-    { name: "Pandas", icon: <SiPandas className="w-8 h-8 text-blue-600" /> },
-    { name: "NumPy", icon: <SiNumpy className="w-8 h-8 text-blue-400" /> },
+    { name: "HuggingFace", icon: <SiHuggingface className="w-8 h-8 text-yellow-400" /> },
+    { name: "YOLO", icon: <span className="w-8 h-8 flex items-center justify-center text-xs font-bold text-purple-500">YOLO</span> },
+    { name: "BERT", icon: <span className="w-8 h-8 flex items-center justify-center text-xs font-bold text-blue-500">BERT</span> },
   ]
 
   const techStackRow2 = [
