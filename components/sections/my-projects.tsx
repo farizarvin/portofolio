@@ -63,7 +63,7 @@ export function MyProjects() {
       tech: ["Laravel", "Livewire", "BERT", "YOLO", "FastAPI", "JWT"],
       image: "/projects/dailyku.png",
       link: "dailyku.doscom.org",
-      github: "#",
+      github: "https://github.com/farizarvin/Depresi-monitoring",
     },
   ]
 
@@ -73,7 +73,7 @@ export function MyProjects() {
     <section id="projects" className="w-full py-12 md:py-24 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 md:px-8 max-w-7xl">
         <ScrollReveal>
-          <div className="flex flex-col items-start justify-start space-y-4 mb-16">
+          <div className="flex flex-col items-center justify-center text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-tight">My Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl">
               A selection of projects showcasing my expertise in full-stack development, from concept to deployment.

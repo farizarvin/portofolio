@@ -45,7 +45,7 @@ export function SiteHeader() {
         </Link>
 
         {/* Desktop Navigation - Hidden on mobile */}
-        <nav className="hidden md:flex items-center space-x-1 lg:space-x-6 ml-[19.5rem]">
+        <nav className="hidden md:flex items-center space-x-1 lg:space-x-6 ml-[21.5rem]">
           {navItems.map((item) => (
             <Link
               key={item.name}
